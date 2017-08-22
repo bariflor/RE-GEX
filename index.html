@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>regex</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<link rel="shortcut icon" type="image/x-icon" href="assets/img/people.ico">
+</head>
+<body background="http://www.phitany.com/images/slider/web-design-company.jpg">
+<center>
+	<section>
+		<h1>Datos Personales</h1>
+		<div class="contenedor">
+			<form class="form-container" action="" method="get" onsubmit="return validateForm(this.form)">
+				
+      				<div class="nombre">
+      					<input type="text" id="nombre" class="for-control" placeholder="Ingresa tu Nombre" onkeydown="checkInput(event)" onkeyUp="validaName()" autofocus=""  name="n" >
+      					<div id="salida_nombre"></div>
+      				</div>
+
+      				<div class="lastname-container input-box">
+            		<input type="text" id="lastname" class="form-control " placeholder="Ingrese su apellido" onkeyDown="checkInput(event)"  onkeyUp="validaLastname()" >
+            	 <div id="salida_lastname"></div>
+            	</div>
+
+
+          		<div class="dni-container input-box">
+            		<input type="text" id="dni" class="form-control " placeholder="Ingrese su DNI" onkeyDown="checkInput(event)"  onkeyUp="validadni()" >
+            	  <div id="salida_dni"></div>
+              </div> 
+
+            	<div class="nacimiento-container input-box">
+            		<input type="date" id="cumpleaño" class="form-control " placeholder="dd/mm/aaaa " onkeyDown="checkInput(event)"  onkeyUp="validacumpleaño()" >
+            	<div id="salida_cumpleaño"></div>
+
+            	<div class="celular-container input-box">
+            		<input type="text" id="cel" class="form-control " placeholder="999999999 " onkeyDown="checkInput(event)"  onkeyUp="validacelular()" >
+            	<div id="salida_celular"></div>
+
+            	<div class="fono-container input-box">
+            		<input type="text" id="fono" class="form-control " placeholder="Ingrese su Telefono " onkeyDown="checkInput(event)"  onkeyUp="validafono()" >
+            	<div id="salida_fono"></div>
+
+            	<div class="email-container input-box">              		
+            		<input type="email" id="input-email" class="form-control" placeholder="Ingrese su correo electrónico"  onkeyUp="validaEmail()" >
+            		<div for="" id="salida_mail" ></div>
+          		</div>
+
+          		<div class="form-group">
+            		<input type="password" id="input-password" class="form-control" placeholder="Ingrese su contraseña"  onkeyUp="validaPass()" >
+             		<div for="" id="salida_pass" ></div>
+          		</div>
+
+          		<div class="form-group">
+           	 		
+            		<input type="password" id="input-password" class="form-control" placeholder="Confirme su contraseña"  onkeyUp="validaPass()" >
+             		<div for="" id="salida_pass" ></div>
+          		</div>
+
+          		<div class="form-group">
+           	 		
+            		<textarea name="name" rows="6" cols="40" placeholder="Deja tu comentario aquí..."></textarea>
+             		<div for="" id="salida_pass" ></div>
+          		</div>
+
+          		<div class="checkbox">
+           	 		<input type="checkbox" value="remember-me">
+           	 		<span>Acepto los terminos y condiciones</span><br>
+           	 		<button type="submit" name="button" onclick="validarForm()">Registrarme</button>
+          		</div>	
+			</form>
+		</div>
+	</section>
+
+</center>
+	
+	<script src="assets/js/app.js" type="text/javascript"></script>
+</body>
+</html>

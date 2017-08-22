@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Sedgwick+Ave|Sedgwick+Ave+Display');
+*{
+/*	outline: 1px solid red;
+*/	margin: 0;
+	
+
+}
+body{
+	background-color: blue;
+	color: black;
+	font-family: 'Pacifico', cursive;
+	font-family: 'Sedgwick Ave Display', cursive;
+	font-family: 'Sedgwick Ave', cursive;
+}
+.contenedor{
+	margin-top: 50px;
+	width: 400px;
+	height: 550px;
+	background-color: #dae2d4;
+	padding: 50px;
+	border: 15px;
+}
+.contenedor:after {
+  content: "";
+  background-image: url(../img/bike-wallpaper.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  position: absolute;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;  
+  z-index: -1;   
+}
